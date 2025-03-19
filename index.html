@@ -9,14 +9,16 @@
   <body>
     <div id="tela-boas-vindas" class="tela">
       <h1 class="titulo">
-        Oi Amor, hoje é teu aniversário e decidi fazer algo diferente pra
-        demonstrar o carinho que sinto por você ❤️
+        Oi Amor, hoje é teu aniversário e decidi fazer algo diferente pra demonstrar o carinho que sinto por você ❤️
       </h1>
       <button id="iniciar" class="botao">Clica Aqui</button>
     </div>
 
     <div id="tela-carregamento" class="tela" style="display: none">
-      <div class="loader"></div>
+      <h2>Carregando...</h2>
+      <div class="barra-carregamento">
+        <div class="barra-progresso"></div>
+      </div>
     </div>
 
     <div id="tela-contagem-regressiva" class="tela" style="display: none">
@@ -25,17 +27,16 @@
     </div>
 
     <div id="tela-confetes" class="tela" style="display: none">
-      <canvas id="confetesCanvas"></canvas>
+      <canvas id="confetesCanvas" class="confetes"></canvas>
       <div class="surpresa-container">
-        <img
-          id="imagemCarrossel"
-          src="./src/Thali.jpeg"
-          alt="Imagem de Surpresa"
-        />
+        <div class="carrossel">
+          <img src="./src/Thali3.jpeg" alt="Imagem 1" class="ativo">
+          <img src="./src/Thali2.jpeg" alt="Imagem 2">
+          <img src="./src/Thali.jpeg" alt="Imagem 3">
+        </div>
         <div class="texto-aniversario">
           <h2>Happy Birthday Ursinha 🎉</h2>
-          <p>
-            Hoje é um dia que merece muita festa, alegria, carinho e amor do
+          <p>Hoje é um dia que merece muita festa, alegria, carinho e amor do
             mundo, porque foi nesse dia que nasceu a pessoa mais incrível que eu
             já conheci! e que sorte a minha! e de todos que tem o privilégio de
             estar ao teu lado, de poder compartilhar a vida com alguém tão
@@ -64,13 +65,12 @@
             sorrir e, principalmente, pra te amar com todo meu coração. Feliz
             aniversário, minha princesa! Que esse seja mais um capítulo lindo da
             tua história, e que eu possa estar presente em todos os próximos. Eu
-            te amo muito, com todo carinho Douglas ❤️
-          </p>
+            te amo muito, com todo carinho Douglas ❤️</p>
         </div>
       </div>
     </div>
 
     <script src="script.js"></script>
-    <!-- Arquivo JavaScript separado -->
   </body>
 </html>
+      

@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy birthday</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Aniversário!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="tela-boas-vindas" class="tela">
+      <h1 class="titulo">
+        Oi Amor, hoje é teu aniversário e decidi fazer algo diferente pra
+        demonstrar o carinho que sinto por você ❤️
+      </h1>
+      <button id="iniciar" class="botao">Clica Aqui</button>
+    </div>
+
+    <div id="tela-carregamento" class="tela" style="display: none">
+      <div class="loader"></div>
+    </div>
+
+    <div id="tela-contagem-regressiva" class="tela" style="display: none">
+      <h2>Contagem Regressiva</h2>
+      <div id="contador">3</div>
+    </div>
+
+    <div id="tela-confetes" class="tela" style="display: none">
+      <canvas id="confetesCanvas"></canvas>
+      <div class="surpresa-container">
+        <img
+          id="imagemCarrossel"
+          src="./src/Thali.jpeg"
+          alt="Imagem de Surpresa"
+        />
+        <div class="texto-aniversario">
+          <h2>Happy Birthday Ursinha 🎉</h2>
+          <p>
+            Hoje é um dia que merece muita festa, alegria, carinho e amor do
+            mundo, porque foi nesse dia que nasceu a pessoa mais incrível que eu
+            já conheci! e que sorte a minha! e de todos que tem o privilégio de
+            estar ao teu lado, de poder compartilhar a vida com alguém tão
+            especial como tu minha ursinha. Desde que chegou na minha vida, tudo
+            mudou pra melhor, trouxe mais cor, mais leveza, mais sentido pra
+            cada dia. O teu sorriso ilumina qualquer ambiente, teu abraço é o
+            lugar mais confortável do mundo, e teu jeito único de ser transforma
+            momentos simples em lembranças inesquecíveis pra mim. Segundo você,
+            você não tem dom, mas eu digo, sim! tu tem esse dom raro de espalhar
+            amor sem precisar dizer nada, de transmitir paz só com o teu olhar.
+            Admiro cada detalhe teu. A forma como tu enfrenta os teus desafios,
+            o brilho nos teus olhos quando fala sobre teus sonhos, a dedicação
+            que coloca em tudo o que faz. Tu é forte, linda por dentro e por
+            fora, e tem um coração gigantesco. A verdade é que eu não poderia
+            ter encontrado alguém melhor pra ter do meu lado. Tu é a minha
+            parceira, minha melhor amiga, meu amor, minha inspiração. Hoje, mais
+            do que nunca, quero que tu se sinta especial. Quero que tu receba de
+            volta todo o amor que espalha pelo mundo. Quero que saiba o quanto
+            eu te admiro, o quanto me orgulho de ti e do quanto sou grato por te
+            ter na minha vida. Espero que esse novo ciclo traga tudo o que tu
+            merece! felicidade, conquistas, momentos inesquecíveis e muito,
+            muito amor. E acima de tudo, quero que nunca duvide do quanto eu te
+            amo. Do quanto sou feliz por acordar todos os dias sabendo que tenho
+            você ao meu lado. Estarei aqui pra tudo! pra te apoiar, pra segurar
+            tua mão quando precisar, pra celebrar tuas vitórias, pra te fazer
+            sorrir e, principalmente, pra te amar com todo meu coração. Feliz
+            aniversário, minha princesa! Que esse seja mais um capítulo lindo da
+            tua história, e que eu possa estar presente em todos os próximos. Eu
+            te amo muito, com todo carinho Douglas ❤️
+          </p>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
-</body>
+    <!-- Arquivo JavaScript separado -->
+  </body>
 </html>

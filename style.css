@@ -1,17 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    overflow: hidden;
-    background-color: #fce4ec; /* Fundo rosa claro */
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+  background-color: #f569f5;
+  overflow-y: auto; /* Permite rolagem */
+  text-align: center;
 }
 
-.heart {
-    position: absolute;
-    color: red;
-    font-size: 24px;
-    animation: floatUp 4s linear forwards;
+.surpresa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 150vh; /* Agora a página é maior que a tela */
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
 }
 
-@keyframes floatUp {
-    0% { transform: translateY(0) scale(1); opacity: 1; }
-    100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+
+
+
+/* Configuração do Carrossel */
+.carrossel {
+  position: relative;
+  width: 25vw;
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
+
+.carrossel img {
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carrossel img.ativo {
+  opacity: 1;
+}
+
+/* Configuração do Texto */
+.texto-aniversario {
+  width: 65vw;
+  font-size: clamp(0.8em, 1.5vw, 1.2em); /* Texto menor */
+  line-height: 1.4;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  max-width: 65vw;
+}
+
+/* Confetes sobre tudo */
+.confetes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 2; /* Sobre tudo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .surpresa-container {
+    height: 200vh; /* Mais espaço para rolagem em telas menores */
+  }
+}
+
+  .carrossel {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .texto-aniversario {
+    width: 90%;
+    font-size: 1em;
+    text-align: center;
+  }
